@@ -24,6 +24,7 @@ services:
         - MYSQL_PASSWORD=${MYSQL_PASSWORD}
         - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
         - TZ=${MYSQL_TIMEZONE}
+      restart: always
       volumes:
         - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
         - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
@@ -42,7 +43,5 @@ services:
       ports:
         - "${GOGS_HTTP_PORT}:3000"
         - "${GOGS_SSH_PORT}:22"
-      depends_on:
-        - "mysql"
       networks:
         - backend
