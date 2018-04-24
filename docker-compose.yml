@@ -33,7 +33,6 @@ services:
       networks:
         - backend
 
-
 ### gogs ###########################################
     gogs:
       build: ./gogs
