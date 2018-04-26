@@ -61,7 +61,7 @@ services:
           - DRONE_DATABASE_DRIVER=mysql
           - DRONE_DATABASE_DATASOURCE=${MYSQL_USER}:${MYSQL_PASSWORD}@tcp(mysql:3306)/drone?parseTime=true
           - DRONE_GOGS=true
-          - DRONE_GOGS_URL=http://gogs:10080
+          - DRONE_GOGS_URL=http://gogs:3000
           - DRONE_GOGS_PRIVATE_MODE=true
           - DRONE_GOGS_SKIP_VERIFY=true
           - DRONE_SECRET=secret
