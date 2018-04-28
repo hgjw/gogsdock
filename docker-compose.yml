@@ -66,7 +66,7 @@ services:
           - DRONE_GOGS_SKIP_VERIFY=true
           - DRONE_SECRET=secret
           - DRONE_ADMIN=v
-          - DRONE_HOST=http://gogs
+          - DRONE_HOST=http://drone.test
           - GIN_MODE=release
         networks:
           - backend
@@ -82,6 +82,5 @@ services:
         environment:
           - DRONE_SERVER=drone-server:9000
           - DRONE_SECRET=secret
-          - DRONE_HOST=http://gogs
         networks:
           - backend
