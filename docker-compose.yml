@@ -65,7 +65,7 @@ services:
           - DRONE_GOGS_PRIVATE_MODE=true
           - DRONE_GOGS_SKIP_VERIFY=true
           - DRONE_SECRET=secret
-          - DRONE_ADMIN=v
+          - DRONE_ADMIN=admin
           - DRONE_HOST=http://drone.test
           - GIN_MODE=release
         networks:
